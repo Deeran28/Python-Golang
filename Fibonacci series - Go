@@ -1,0 +1,18 @@
+package main
+import "fmt"
+
+func main() {
+    fmt.Println("Enter the number--> ")
+    var num,temp int
+    fmt.Scanln(&num)
+    a := 0
+    b := 1
+    fmt.Println("The fibonacci series is")
+    for i :=2;i<=num;i++{
+        temp = a+b
+        a = b
+        b = temp
+        fmt.Println(temp)
+    }
+    
+}
