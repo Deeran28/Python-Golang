@@ -1,0 +1,12 @@
+num = int(input("Enter a number: "))
+
+sum_one = 0
+sum_two = 1
+print("The fibonacci series is:")
+for i in range(num):
+
+    temp = sum_one
+    sum_one = sum_two
+    sum_two = temp+sum_two
+
+    print(sum_one)
